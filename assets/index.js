@@ -55,7 +55,8 @@ console.log(d)
 //1.2
 const n = Math.sin(54);
 const m = Math.cos(16);
-console.log(Math.round((n*m)**2))
+const res = (n*m)**2
+console.log(res.toFixed(2))
 //1.3
 const e = 2**7
 const f = 3**Math.sqrt(49)
@@ -67,12 +68,12 @@ console.log(Math.round((i/g+f)*e))
 const z = 6
 const p = 7
 
-if(z%2== 0) {
+if(z%2 === 0) {
     console.log('четное')
 } else {
     console.log('нeчетное')
 }
-if(p%2== 0) {
+if(p%2 === 0) {
     console.log('четное')
 } else {
     console.log('нeчетное')
@@ -80,7 +81,7 @@ if(p%2== 0) {
 
 //3
 let name 
-if(name === undefined || name === null){
+if(!name){
     console.log('Hello, Guest!')
 } else {
    console.log(`Hello, ${name}!`)
